@@ -748,7 +748,7 @@ int gstreamer_init(int argc, char *argv[], CustomData *data) {
 }
 
 int main(int argc, char *argv[]) {
-    PropertyConfigurator::doConfigure("../kvs_log_configuration");
+    PropertyConfigurator::doConfigure("../kvs_producer_sdk-src/kvs_log_configuration");
 
     signal(SIGINT, sigint_handler);
 

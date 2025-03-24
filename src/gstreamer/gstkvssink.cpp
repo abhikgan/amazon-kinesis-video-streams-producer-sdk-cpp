@@ -107,7 +107,7 @@ GST_DEBUG_CATEGORY_STATIC (gst_kvs_sink_debug);
 #define DEFAULT_SESSION_TOKEN "session_token"
 #define DEFAULT_REGION "us-west-2"
 #define DEFAULT_ROTATION_PERIOD_SECONDS 3600
-#define DEFAULT_LOG_FILE_PATH "../kvs_log_configuration"
+#define DEFAULT_LOG_FILE_PATH "../kvs_producer_sdk-src/kvs_log_configuration"
 #define DEFAULT_STORAGE_SIZE_MB 128
 #define DEFAULT_STOP_STREAM_TIMEOUT_SEC 120
 #define DEFAULT_SERVICE_CONNECTION_TIMEOUT_SEC 5
