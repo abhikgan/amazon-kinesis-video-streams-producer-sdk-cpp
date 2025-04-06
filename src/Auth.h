@@ -36,6 +36,14 @@ public:
     {
     }
 
+    Credentials(const Credentials& other)
+        : access_key_(other.access_key_)
+        , secret_key_(other.secret_key_)
+        , session_token_(other.session_token_)
+        , expiration_(other.expiration_)
+    {
+    }
+
     /**
      * Virtual destructor
      */
@@ -206,7 +214,7 @@ private:
 class StaticCredentialProvider : public CredentialProvider {
 public:
 
-    StaticCredentialProvider(const Credentials& credentials) : credentials_(std::move(credentials)) {}
+    StaticCredentialProvider(const Credentials& credentials) : credentials_(credentials) {}
 
 protected:
 

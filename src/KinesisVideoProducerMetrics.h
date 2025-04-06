@@ -60,7 +60,7 @@ public:
      * Returns the elementary frame rate in frames per second for all streams
      */
     uint64_t getTotalElementaryFrameRate() const {
-        return client_metrics_.totalElementaryFrameRate;
+        return static_cast<uint64_t>(client_metrics_.totalElementaryFrameRate);
     }
 
     /**
