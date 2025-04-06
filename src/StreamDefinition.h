@@ -94,7 +94,7 @@ public:
     /**
      * @return A the number of tracks
      */
-    const size_t getTrackCount() const;
+    size_t getTrackCount() const;
 
     /**
      * @return An Kinesis Video StreamInfo object

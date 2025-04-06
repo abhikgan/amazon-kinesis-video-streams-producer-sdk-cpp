@@ -68,7 +68,7 @@ public:
     /**
     * Gets the underlying session token, return NULL if not exist
     */
-    inline const PCHAR getSessionTokenIfExist() const
+    inline PCHAR getSessionTokenIfExist() const
     {
         return session_token_ == "" ? NULL : (PCHAR) session_token_.c_str();
     }
@@ -206,7 +206,7 @@ private:
 class StaticCredentialProvider : public CredentialProvider {
 public:
 
-    StaticCredentialProvider(const Credentials& credentials) : credentials_(credentials) {}
+    StaticCredentialProvider(const Credentials& credentials) : credentials_(std::move(credentials)) {}
 
 protected:
 

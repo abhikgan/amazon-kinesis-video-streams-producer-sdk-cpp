@@ -139,7 +139,7 @@ const string& StreamDefinition::getStreamName() const {
     return stream_name_;
 }
 
-const size_t StreamDefinition::getTrackCount() const {
+size_t StreamDefinition::getTrackCount() const {
     return track_info_.size();
 }
 
